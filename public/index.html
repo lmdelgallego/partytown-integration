@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <script src="./~partytown/partytown.js"></script>
-    <script>
-      partytown = {
-        forward: ['dataLayer.push'],
-      };
-    </script>
-
-    <script>
-      import { partytownSnippet } from '@builder.io/partytown/integration';
-      const snippetText = partytownSnippet();
-    </script>
+    <script src="<%= BASE_URL %>~partytown/partytown.js"></script>
     <!-- Google Tag Manager -->
     <script type="text/partytown">
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
